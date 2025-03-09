@@ -2,10 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import usercache from '../usercache.json';
 import { createCanvas } from 'canvas';
-import express from 'express';
+// import express from 'express';
 
-const app = express();
-const port = 8085;
+// const app = express();
+// const port = 8085;
 
 async function main() {
     let users = usercache.map((user) => ({
@@ -170,10 +170,12 @@ function generateLeaderboardImage(stats: any[]) {
     console.log("Leaderboard image saved!");
 }
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
+main();
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-    main();
-    setInterval(main, 300000);
-});
+// app.use('/images', express.static(path.join(__dirname, 'images')));
+
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}`);
+//     main();
+//     setInterval(main, 300000);
+// });
