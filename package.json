@@ -1,0 +1,25 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "cloudinary": "^2.5.1",
+    "express": "^4.21.2",
+    "gapi": "^0.0.3",
+    "install": "^0.13.0",
+    "onedrive-api": "^1.1.1",
+    "ts-node": "^10.9.2"
+  }
+}
