@@ -72,9 +72,9 @@ function generateLeaderboardImage(stats: any[]) {
     // Colors & Styling
     const bgColor = "#1e1e1e"; // Dark background
     const textColor = "#ffffff"; // White text
-    const highlightColor = "#FFD700"; // Gold for the top player
-    const silverColor = "#C0C0C0"; // Silver for the second player
-    const bronzeColor = "#CD7F32"; // Bronze for the third player
+    const highlightColor = "#B8860B"; // Gold for the top player
+    const silverColor = "#A9A9A9"; // Silver for the second player
+    const bronzeColor = "#8B5A2B"; // Bronze for the third player
 
     // Table settings
     const colWidth = width / 2 - 50; // Two columns
