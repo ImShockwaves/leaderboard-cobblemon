@@ -1,5 +1,11 @@
 [
   {
+    "username": "maxime0515",
+    "uuid": "6a1a0bc0-7897-4626-844a-dec57a743f87",
+    "caught": 472,
+    "shiny": 46
+  },
+  {
     "username": "ImShockwaves",
     "uuid": "9342c492-8572-4465-adb7-8bd96f3027ff",
     "caught": 651,
@@ -16,12 +22,6 @@
     "uuid": "eda96eab-b82b-48ec-aead-6adff40e9094",
     "caught": 405,
     "shiny": 7
-  },
-  {
-    "username": "maxime0515",
-    "uuid": "6a1a0bc0-7897-4626-844a-dec57a743f87",
-    "caught": 472,
-    "shiny": 46
   },
   {
     "username": "Ninouche00",
