@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import usercache from '../usercache.json';
 import { createCanvas } from 'canvas';
+import axios from 'axios';
 
 async function main() {
     let users = usercache.map((user) => ({
@@ -30,8 +31,8 @@ async function main() {
             console.log("User not found for ", playerStats.uuid, "trying to fetch data from mcuuid");
 
             try {
-                const result = await fetch(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
-                console.log("API res", result, result.json());
+                const result = await axios.get(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
+                console.log("API res", result);
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
                 // continue;
