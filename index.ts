@@ -25,7 +25,7 @@ async function main() {
 
         const playerStats = JSON.parse(fs.readFileSync(path.join(`${__dirname}/../world/cobblemonplayerdata/${playerData}/${statFile}`)).toString());
 
-        const user = users.find((user) => user.uuid === playerStats.uuid);
+        let user = users.find((user) => user.uuid === playerStats.uuid);
 
         if (!user) {
             console.log("User not found for ", playerStats.uuid, "trying to fetch data from mcuuid");
@@ -33,9 +33,19 @@ async function main() {
             try {
                 const result = await axios.get(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
                 console.log("API res", result.data);
+                if (result.data.name !== "ImShogeki") {
+                    users.push({
+                        username: result.data.name,
+                        uuid: playerStats.uuid,
+                        caught: 0,
+                        shiny: 0,
+                    });
+
+                    user = users.find((user) => user.uuid === playerStats.uuid);
+                }
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
-                // continue;
+                continue;
             }
         }
 
