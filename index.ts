@@ -16,7 +16,11 @@ async function main() {
     // add users missing already added in users.json
     for (const user of usersBackup) {
         if (!users.find((u) => u.uuid === user.uuid)) {
-            users.push(user);
+            users.push({
+                ...user,
+                caught: 0,
+                shiny: 0,
+            });
         }
     }
 
