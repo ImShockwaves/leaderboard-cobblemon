@@ -2,10 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import usercache from '../usercache.json';
 import { createCanvas } from 'canvas';
-// import express from 'express';
-
-// const app = express();
-// const port = 8085;
 
 async function main() {
     let users = usercache.map((user) => ({
@@ -31,15 +27,15 @@ async function main() {
         const user = users.find((user) => user.uuid === playerStats.uuid);
 
         if (!user) {
-            console.log("User not found for ", playerData, "trying to fetch data from mcuuid");
+            console.log("User not found for ", playerStats.uuid, "trying to fetch data from mcuuid");
 
-            try {
-                const result = await fetch(`https://tikolu.net/mcuuid/playerStats.uuid`);
-                console.log("API res", result);
-            } catch (error) {
-                console.error("Error fetching data from mcuuid", error);
+            // try {
+            //     const result = await fetch(`https://tikolu.net/mcuuid/playerStats.uuid`);
+            //     console.log("API res", result);
+            // } catch (error) {
+                // console.error("Error fetching data from mcuuid", error);
                 continue;
-            }
+            // }
         }
 
         const pokemonStats = playerStats.extraData.cobbledex_discovery.registers;
@@ -178,11 +174,3 @@ function generateLeaderboardImage(stats: any[]) {
 }
 
 main();
-
-// app.use('/images', express.static(path.join(__dirname, 'images')));
-
-// app.listen(port, () => {
-//     console.log(`Server running at http://localhost:${port}`);
-//     main();
-//     setInterval(main, 300000);
-// });
