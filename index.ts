@@ -34,14 +34,14 @@ async function main() {
                 const result = await axios.get(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
                 console.log("API res", result.data);
                 if (result.data.name !== "ImShogeki") {
-                    users.push({
+                    user = {
                         username: result.data.name,
                         uuid: playerStats.uuid,
                         caught: 0,
                         shiny: 0,
-                    });
+                    }
 
-                    user = users.find((user) => user.uuid === playerStats.uuid);
+                    users.push(user);
                 }
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
