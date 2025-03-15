@@ -30,7 +30,7 @@ async function main() {
             console.log("User not found for ", playerStats.uuid, "trying to fetch data from mcuuid");
 
             try {
-                const result = await fetch(`https://tikolu.net/mcuuid/${playerStats.uuid}`);
+                const result = await fetch(`https://minecraftuuid.com/player/${playerStats.uuid}?_rsc=1hu86`);
                 console.log("API res", result, result.json());
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
