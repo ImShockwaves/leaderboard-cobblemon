@@ -31,8 +31,16 @@ async function main() {
         const user = users.find((user) => user.uuid === playerStats.uuid);
 
         if (!user) {
-            console.log("User not found for ", playerData);
-            continue;
+            console.log("User not found for ", playerData, "trying to fetch data from mcuuid");
+
+            try {
+                const result = await fetch(`https://tikolu.net/mcuuid/playerStats.uuid`);
+                console.log("API res", result);
+            } catch (error) {
+                console.error("Error fetching data from mcuuid", error);
+                
+                continue;
+            }
         }
 
         const pokemonStats = playerStats.extraData.cobbledex_discovery.registers;
