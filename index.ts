@@ -51,6 +51,9 @@ async function main() {
 
         const pokemonStats = playerStats.extraData.cobbledex_discovery.registers;
 
+        console.log("Processing", user!.username);
+        
+
         for (const key in pokemonStats) {
             for (const form in pokemonStats[key]) {
                 const pokemon = pokemonStats[key][form];
