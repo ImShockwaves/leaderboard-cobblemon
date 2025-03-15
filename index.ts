@@ -38,7 +38,6 @@ async function main() {
                 console.log("API res", result);
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
-                
                 continue;
             }
         }
@@ -50,20 +49,20 @@ async function main() {
                 const pokemon = pokemonStats[key][form];
 
                 if (pokemon.status === 'CAUGHT') {
-                    user.caught++;
+                    user!.caught++;
                 }
                 if (pokemon.isShiny) {
-                    user.shiny++;
+                    user!.shiny++;
                 }
             }
         }
 
         // modify user object with new stats with uuid
         users = users.map(obj => 
-            obj.uuid === user.uuid ? { ...obj, caught: user.caught, shiny: user.shiny } : obj
+            obj.uuid === user!.uuid ? { ...obj, caught: user!.caught, shiny: user!.shiny } : obj
         );
 
-        console.log("Processed", user.username);
+        console.log("Processed", user!.username);
     }
 
 
