@@ -29,13 +29,13 @@ async function main() {
         if (!user) {
             console.log("User not found for ", playerStats.uuid, "trying to fetch data from mcuuid");
 
-            // try {
-            //     const result = await fetch(`https://tikolu.net/mcuuid/playerStats.uuid`);
-            //     console.log("API res", result);
-            // } catch (error) {
-                // console.error("Error fetching data from mcuuid", error);
-                continue;
-            // }
+            try {
+                const result = await fetch(`https://tikolu.net/mcuuid/${playerStats.uuid}`);
+                console.log("API res", result);
+            } catch (error) {
+                console.error("Error fetching data from mcuuid", error);
+                // continue;
+            }
         }
 
         const pokemonStats = playerStats.extraData.cobbledex_discovery.registers;
