@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import usercache from '../usercache.json';
+import usersBackup from './users.json';
 import { createCanvas } from 'canvas';
 import axios from 'axios';
 
@@ -11,6 +12,13 @@ async function main() {
         caught: 0,
         shiny: 0,
     }))
+
+    // add users missing already added in users.json
+    for (const user of usersBackup) {
+        if (!users.find((u) => u.uuid === user.uuid)) {
+            users.push(user);
+        }
+    }
 
     const playerDataFolder = fs.readdirSync(path.join(`${__dirname}/../world/cobblemonplayerdata`));
 
