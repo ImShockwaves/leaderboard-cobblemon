@@ -41,8 +41,8 @@ async function main() {
                 }
 
                 users.push(user);
-            } catch (error) {
-                console.error("Error fetching data from mcuuid", error);
+            } catch (error: any) {
+                console.error("Error fetching data from mcuuid", error.res);
                 continue;
             }
         }
