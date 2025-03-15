@@ -32,7 +32,7 @@ async function main() {
 
             try {
                 const result = await axios.get(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
-                console.log("API res", result);
+                console.log("API res", result.data);
             } catch (error) {
                 console.error("Error fetching data from mcuuid", error);
                 // continue;
