@@ -10,7 +10,7 @@ async function main() {
         uuid: user.uuid,
         caught: 0,
         shiny: 0,
-    })).filter((user) => user.username !== 'ImShogeki');
+    }))
 
     const playerDataFolder = fs.readdirSync(path.join(`${__dirname}/../world/cobblemonplayerdata`));
 
@@ -33,7 +33,6 @@ async function main() {
             try {
                 const result = await axios.get(`https://api.minecraftservices.com/minecraft/profile/lookup/${playerStats.uuid}`);
                 console.log("API res", result.data);
-                if (result.data.name === "ImShogeki") continue;
                 user = {
                     username: result.data.name,
                     uuid: playerStats.uuid,
@@ -74,6 +73,8 @@ async function main() {
         console.log("Processed", user!.username);
     }
 
+    // removing admin from leaderboard
+    users = users.filter(user => user.username !== "ImShogeki");
 
     fs.writeFileSync(path.join(__dirname, 'users.json'), JSON.stringify(users, null, 2));
 
