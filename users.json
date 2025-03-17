@@ -1,5 +1,11 @@
 [
   {
+    "username": "AranaCachou",
+    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
+    "caught": 414,
+    "shiny": 6
+  },
+  {
     "username": "Deathfyred",
     "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
     "caught": 698,
@@ -28,12 +34,6 @@
     "uuid": "118dffbd-125e-4fce-aef6-704b0f241b18",
     "caught": 17,
     "shiny": 0
-  },
-  {
-    "username": "AranaCachou",
-    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
-    "caught": 414,
-    "shiny": 6
   },
   {
     "username": "gatougatou",
