@@ -1,5 +1,11 @@
 [
   {
+    "username": "maxime0515",
+    "uuid": "6a1a0bc0-7897-4626-844a-dec57a743f87",
+    "caught": 474,
+    "shiny": 46
+  },
+  {
     "username": "Deathfyred",
     "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
     "caught": 715,
@@ -46,11 +52,5 @@
     "uuid": "562a0cdf-3313-4d26-b805-8a16db9b3afb",
     "caught": 19,
     "shiny": 0
-  },
-  {
-    "username": "maxime0515",
-    "uuid": "6a1a0bc0-7897-4626-844a-dec57a743f87",
-    "caught": 474,
-    "shiny": 46
   }
 ]
