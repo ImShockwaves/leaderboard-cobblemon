@@ -8,8 +8,14 @@
   {
     "username": "ImShockwaves",
     "uuid": "9342c492-8572-4465-adb7-8bd96f3027ff",
-    "caught": 834,
+    "caught": 835,
     "shiny": 93
+  },
+  {
+    "username": "AranaCachou",
+    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
+    "caught": 456,
+    "shiny": 6
   },
   {
     "username": "Deathfyred",
@@ -22,12 +28,6 @@
     "uuid": "eda96eab-b82b-48ec-aead-6adff40e9094",
     "caught": 485,
     "shiny": 16
-  },
-  {
-    "username": "AranaCachou",
-    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
-    "caught": 456,
-    "shiny": 6
   },
   {
     "username": "maxime0515",
