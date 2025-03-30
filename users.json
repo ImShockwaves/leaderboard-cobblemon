@@ -1,5 +1,11 @@
 [
   {
+    "username": "Ninouche00",
+    "uuid": "e50ea735-e13f-4d41-957c-2a07dc295400",
+    "caught": 226,
+    "shiny": 3
+  },
+  {
     "username": "AranaCachou",
     "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
     "caught": 473,
@@ -16,12 +22,6 @@
     "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
     "caught": 900,
     "shiny": 197
-  },
-  {
-    "username": "Ninouche00",
-    "uuid": "e50ea735-e13f-4d41-957c-2a07dc295400",
-    "caught": 226,
-    "shiny": 3
   },
   {
     "username": "Titanoencore",
