@@ -12,16 +12,16 @@
     "shiny": 3
   },
   {
-    "username": "AranaCachou",
-    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
-    "caught": 580,
-    "shiny": 16
-  },
-  {
     "username": "Deathfyred",
     "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
     "caught": 990,
     "shiny": 204
+  },
+  {
+    "username": "AranaCachou",
+    "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
+    "caught": 580,
+    "shiny": 16
   },
   {
     "username": "Titanoencore",
