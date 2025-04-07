@@ -1,17 +1,5 @@
 [
   {
-    "username": "Deathfyred",
-    "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
-    "caught": 994,
-    "shiny": 204
-  },
-  {
-    "username": "ImShockwaves",
-    "uuid": "9342c492-8572-4465-adb7-8bd96f3027ff",
-    "caught": 950,
-    "shiny": 98
-  },
-  {
     "username": "Ninouche00",
     "uuid": "e50ea735-e13f-4d41-957c-2a07dc295400",
     "caught": 327,
@@ -22,6 +10,18 @@
     "uuid": "35d78397-508b-4ed0-9c71-f59d6dbccf67",
     "caught": 617,
     "shiny": 29
+  },
+  {
+    "username": "Deathfyred",
+    "uuid": "95bba2a3-a7e4-4c3a-bdf3-6cbf5e9fe701",
+    "caught": 994,
+    "shiny": 204
+  },
+  {
+    "username": "ImShockwaves",
+    "uuid": "9342c492-8572-4465-adb7-8bd96f3027ff",
+    "caught": 950,
+    "shiny": 98
   },
   {
     "username": "Titanoencore",
